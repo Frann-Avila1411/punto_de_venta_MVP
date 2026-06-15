@@ -21,4 +21,6 @@ from rest_framework.authtoken import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include('operativa.urls')),
+    path('api/auth/login/', views.obtain_auth_token),
+    path('auth/login/', views.obtain_auth_token),
 ]
