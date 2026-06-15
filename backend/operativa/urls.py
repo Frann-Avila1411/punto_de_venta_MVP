@@ -13,6 +13,6 @@ router.register(r'pedidos', PedidoViewSet)
 router.register(r'movimientos', MovimientoInventarioViewSet)
 
 urlpatterns = [
-    path('api/', include(router.urls)),
-    path('api/auth/', include('operativa.auth_urls')),
+    path('', include(router.urls)),
+    path('auth/', include('operativa.auth_urls')),
 ]
