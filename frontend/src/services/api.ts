@@ -4,7 +4,7 @@ const TOKEN_KEY = 'puntodeventa_token';
 
 const api = axios.create({
     // URL base de tu servidor Django local
-    baseURL: 'http://localhost:8000/api/',
+    baseURL: process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000/api/',
     headers: {
         'Content-Type': 'application/json',
     }
